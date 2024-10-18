@@ -1,21 +1,17 @@
-const width = 10;
-const height = 5;
-const space = width * height;
+// операторы присваивания
+let age = 18;
+age += 2; //age = age+2
+console.log(age);
+age++;
+console.log(age);
 
-let a = 56, b = 67;
+// операторы сравнения
 
-let c = a ** 3; //a*a*a
+const vasia = 20;
 
-console.log(c);
+console.log(vasia > age);
 
-const city = 'Москва';
+let nn = 'Ramil\'';
 
-const street = 'Новослободская';
-
-console.log(city + ', ' + street + ' ' + 5);
-
-
-
-
-
+console.log(nn + ' ' + 'Ilnurovich');
 
