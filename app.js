@@ -1,9 +1,9 @@
-const score = [5, 10, 0, 15];
+function add(a, b) {
+    return a + b;
+}
 
-//for (const [index, element] of score.entries()) {
-//  console.log(`Раунд:${index + 1} ${element} очков`);
-//}
+function calculate(a, b, fun) {
+    return fun(a, b);
+}
 
-score.forEach((scoreEl, i) => {
-    console.log(`Раунд ${i + 1}: ${scoreEl}`)
-});
+console.log(calculate(5, 6, add));
