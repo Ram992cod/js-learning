@@ -7,3 +7,5 @@ function calculate(a, b, fun) {
 }
 
 console.log(calculate(5, 6, add));
+
+console.log('test');
