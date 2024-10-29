@@ -1,5 +1,7 @@
-const score = [5, 10, 0, 15];
+const transactionUSD = [10, -6, 50, 100];
 
-score.forEach((element, index) => {
-    console.log(`Раунд ${index + 1}: ${element}`);
-});
+const transactionRUB = transactionUSD.map((transaction, el) => {
+    return transaction * 60;
+})
+
+console.log(transactionRUB);
