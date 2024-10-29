@@ -1,11 +1,5 @@
-function add(a, b) {
-    return a + b;
-}
+const score = [5, 10, 0, 15];
 
-function calculate(a, b, fun) {
-    return fun(a, b);
-}
-
-console.log(calculate(5, 6, add));
-
-console.log('test');
+score.forEach((element, index) => {
+    console.log(`Раунд ${index + 1}: ${element}`);
+});
