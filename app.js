@@ -1,5 +1,6 @@
-const score = [5, 10, 0, 15];
+const prices = [[100, 200], [120, 100], [200, 350]];
 
-score.forEach((element, index) => {
-  console.log(`Раунд ${index + 1}: ${element}`);
-});
+const pricesArr = prices.map(prod => { return prod[1] - prod[0] }
+).filter(price => price > 0);
+
+console.log(pricesArr);
