@@ -1,6 +1,9 @@
-const prices = [[100, 200], [120, 100], [200, 350]];
+const arr = [1, 4, 4, 10];
 
-const pricesArr = prices.map(prod => { return prod[1] - prod[0] }
-).filter(price => price > 0);
+const avg = arr.reduce((acc, value) => {
+  let i = arr.length;
+  acc += value;
+  return acc / i;
+});
 
-console.log(pricesArr);
+console.log(avg);
