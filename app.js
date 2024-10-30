@@ -1,7 +1,6 @@
-const transactionUSD = [10, -6, 50, 100];
+const prices = [[100, 200], [120, 100], [200, 350]];
 
-const transactionRUB = transactionUSD.map((transaction, el) => {
-    return transaction * 60;
-})
+const pricesArr = prices.map(prod => { return prod[1] - prod[0] }
+).filter(price => price > 0);
 
-console.log(transactionRUB);
+console.log(pricesArr);
