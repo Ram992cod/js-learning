@@ -1,9 +1,10 @@
-const arr = [1, 4, 4, 10];
+const userName = 'Вася aka terminator perdinator Пупкин';
 
-const avg = arr.reduce((acc, value) => {
-  let i = arr.length;
-  acc += value;
-  return acc / i;
-});
+let name = userName.slice(0, 4);
+let lastName = userName.slice(31);
 
-console.log(avg);
+let name1 = userName.indexOf('Вася');
+
+console.log(name);
+console.log(lastName);
+console.log(name1);
