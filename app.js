@@ -10,16 +10,35 @@ const num4Error = "89103g35356";
 let fixedNum = "";
 
 function checkN(num) {
-  fixedNum = num.trim();
-  //console.log(fixedNum);
+  //fixedNum = num.trim();
 
-  console.log(fixedNum.lenght);
-
-  if (num.lenght < 10) {
-    return false;
-  } else {
-    return fixedNum;
+  for (element of num) {
+    if (!isNaN(Number(element))) {
+      fixedNum += element;
+    }
   }
+
+  fixedNum = fixedNum.replaceAll(' ', '');
+  fixedNum = fixedNum.replaceAll('+', '');
+  fixedNum = fixedNum.replaceAll('(', '');
+  fixedNum = fixedNum.replaceAll(')', '');
+  fixedNum = fixedNum.replaceAll('-', '');
+
+  if (fixedNum.slice(0, 4) != '8910' && fixedNum.slice(0, 4) != '7910') {
+    console.log(fixedNum);
+    return 'Неверное начало номера';
+  }
+
+
+
+
+  if (fixedNum.length < 11 || fixedNum.length > 11) {
+
+
+    return console.log(fixedNum, fixedNum.length, 'неверный номер');
+  } else
+    return fixedNum;
+
 }
 
-console.log(checkN(num1Error));
+console.log(checkN(num5));
