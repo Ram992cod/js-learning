@@ -1,9 +1,28 @@
 const users = [
-  { name: 'Вася', age: 30 },
-  { name: 'Катя', age: 18 },
-  { name: 'Аня', age: 40 },
-  { name: 'Петя', age: 25 },
+  {
+    name: 'Вася',
+    surname: 'Пупкин',
+    age: 30,
+    skills: ['Разработка', 'DevOps']
+  },
+  {
+    name: 'Катя',
+    surname: 'Белова',
+    age: 18,
+    skills: ['Дизайн']
+  },
 ];
 
 
-console.log(users.sort((a, b) => a.age - b.age));
+const users2 = users.map(user => {
+  return {
+    fullname: `${user.name} ${user.surname}`,
+    nkills: user.skills.length
+  }
+}
+);
+
+console.log(users2);
+1;
+!true;
+
